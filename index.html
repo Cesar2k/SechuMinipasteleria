@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sechu — Pastelería & Minipastelería</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo"><em>Sechu</em></div>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#testimonios">Reseñas</a></li>
+    <li><a href="#contacto" class="nav-cta">Contactar</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="palette-bar">
+  <span style="background:#FFD7AE"></span>
+  <span style="background:#FFAED6"></span>
+  <span style="background:#AED6FF"></span>
+  <span style="background:#AEFFD7"></span>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-text">
+    <span class="hero-tag">🍬 Pastelería & Minipastelería</span>
+    <h1 class="hero-title">El sabor de<br><em>Sechu</em>, en cada<br>mordida</h1>
+    <p class="hero-sub">Hola, soy Lara. Creo pasteles y minipasteles artesanales con mucho amor para tus momentos más especiales. Tortas, mesas dulces, donitas y más.</p>
+    <div class="hero-btns">
+      <a href="#servicios" class="btn-primary">Ver servicios</a>
+      <a href="#contacto" class="btn-outline">Hacer un pedido</a> 
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-grid">
+      <div class="hero-img-card">
+        <div class="hero-img-placeholder">
+          🎂
+          <p>TU FOTO AQUÍ</p>
+        </div>
+      </div>
+      <div class="hero-img-card">
+        <div class="hero-img-placeholder">
+          🍩
+          <p>TU FOTO AQUÍ</p>
+        </div>
+      </div>
+    </div>
+    <div class="float-badge">
+      <span class="badge-icon">💛</span>
+      <div>
+        <div class="badge-num">+200</div>
+        <div class="badge-text">clientes felices</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="section-header reveal">
+    <span class="section-tag">✦ Lo que hacemos</span>
+    <h2 class="section-title">Nuestros <em>servicios</em></h2>
+    <p class="section-sub">Pastelería y minipastelería artesanal. Cada creación es personalizada y hecha con los mejores ingredientes.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <span class="service-icon">🧁</span>
+      <h3 class="service-title">Minipastelería</h3>
+      <p class="service-desc">Mini versiones de tus dulces favoritos: mini tortas, petit fours, bombones y bocaditos artesanales perfectos para cualquier ocasión o detalle de regalo.</p>
+      <span class="service-tag">→ Por unidad o caja</span>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🎂</span>
+      <h3 class="service-title">Tortas</h3>
+      <p class="service-desc">Tortas personalizadas para cumpleaños, casamientos, baby showers y cada celebración especial. Diseños únicos y sabores irresistibles.</p>
+      <span class="service-tag">→ Personalizada</span>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🍬</span>
+      <h3 class="service-title">Mesas Dulces</h3>
+      <p class="service-desc">Armamos tu mesa dulce de punta a punta: cobertura, presentación y variedad para que luzca espectacular en tu evento.</p>
+      <span class="service-tag">→ Eventos</span>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🍩</span>
+      <h3 class="service-title">Donitas</h3>
+      <p class="service-desc">Donitas esponjosas con coberturas artesanales, rellenos sorpresa y decoraciones que las hacen tan lindas como ricas.</p>
+      <span class="service-tag">→ Por docena</span>
+    </div>
+    <!-- TARJETA PARA AGREGAR MÁS SERVICIOS -->
+    <div class="service-card add-more">
+      <div class="plus">+</div>
+      <p>Próximamente más opciones</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="section-header reveal">
+    <span class="section-tag">✦ Portfolio</span>
+    <h2 class="section-title">Nuestras <em>creaciones</em></h2>
+    <p class="section-sub">Un vistazo a lo que hacemos con amor en cada pedido.</p>
+  </div>
+  <div class="gallery-masonry reveal">
+    <div class="gallery-item">
+      <div class="gallery-placeholder" style="aspect-ratio:3/4; padding: 5rem 1rem;">🎂<p>TORTA — TU FOTO</p></div>
+      <div class="gallery-overlay"><span>Torta de Cumpleaños</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder" style="aspect-ratio:4/3; padding: 3rem 1rem;">🍬<p>MESA DULCE — TU FOTO</p></div>
+      <div class="gallery-overlay"><span>Mesa Dulce Temática</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder" style="aspect-ratio:1/1; padding: 4rem 1rem;">🍩<p>DONITAS — TU FOTO</p></div>
+      <div class="gallery-overlay"><span>Donitas Artesanales</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder" style="aspect-ratio:4/3; padding: 3rem 1rem;">🧁<p>CUPCAKES — TU FOTO</p></div>
+      <div class="gallery-overlay"><span>Cupcakes Decorados</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder" style="aspect-ratio:3/4; padding: 5rem 1rem;">🎂<p>TORTA — TU FOTO</p></div>
+      <div class="gallery-overlay"><span>Torta de Casamiento</span></div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-placeholder" style="aspect-ratio:4/3; padding: 3rem 1rem;">🍬<p>DETALLE — TU FOTO</p></div>
+      <div class="gallery-overlay"><span>Detalles Artesanales</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros">
+  <div class="about-text reveal">
+    <div class="section-header" style="text-align:left; margin-bottom:0;">
+      <span class="section-tag">✦ Nuestra historia</span>
+      <h2 class="section-title">Hola, soy <em>Lara</em> 👋</h2>
+    </div>
+    <p>Sechu nació de mi pasión por la pastelería y la minipastelería artesanal. Cada pedido lo hago con dedicación, eligiendo los mejores ingredientes y poniendo toda mi creatividad en el diseño para que tu celebración sea exactamente como la soñaste.</p>
+    <p>Me especializo en piezas personalizadas: desde una torta de cumpleaños hasta una mesa dulce completa. Me adapto a tu temática, colores y gustos para crear algo único para vos.</p>
+    <div class="about-stats">
+      <div class="stat">
+        <div class="stat-num">+200</div>
+        <div class="stat-label">Clientes felices</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">+3</div>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Artesanal</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">♡</div>
+        <div class="stat-label">Con amor</div>
+      </div>
+    </div>
+  </div>
+  <div class="about-visual reveal">
+    <div class="about-img-card">🎂<p>TU FOTO</p></div>
+    <div class="about-img-card">🍩<p>TU FOTO</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="section-header reveal">
+    <span class="section-tag">✦ Lo que dicen</span>
+    <h2 class="section-title">Clientes que <em>nos eligieron</em></h2>
+  </div>
+  <div class="testi-grid reveal">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"La torta de mi cumpleaños quedó divina. No solo era hermosa por fuera, ¡sino que el sabor era increíble! Todos me preguntaban de dónde era."</p>
+      <div class="testi-author">
+        <div class="author-avatar">SG</div>
+        <div>
+          <div class="author-name">Sofía García</div>
+          <div class="author-event">Torta de cumpleaños</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Contratamos la mesa dulce para el baby shower y fue un éxito total. Todo estaba presentado de manera hermosa y los sabores eran deliciosos."</p>
+      <div class="testi-author">
+        <div class="author-avatar">MR</div>
+        <div>
+          <div class="author-name">Mariana Rodríguez</div>
+          <div class="author-event">Mesa dulce — Baby Shower</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Las donitas estaban espectaculares. Las encargué para una reunión de trabajo y desaparecieron en minutos. ¡Ya pedí la segunda docena!"</p>
+      <div class="testi-author">
+        <div class="author-avatar">LC</div>
+        <div>
+          <div class="author-name">Lucas Castro</div>
+          <div class="author-event">Donitas artesanales</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="contact-info reveal">
+    <div class="section-header" style="text-align:left; margin-bottom:1rem;">
+      <span class="section-tag">✦ Contacto</span>
+      <h2 class="section-title">¿Tenés un <em>evento</em> en mente?</h2>
+      <p class="section-sub" style="margin-left:0;">Escribinos y armamos juntos el dulce perfecto para tu celebración.</p>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📱</div>
+      <div class="contact-detail">
+        <div class="contact-label">WhatsApp</div>
+        <div class="contact-value"><a href="https://wa.me/5492942650209" target="_blank">+54 9 2942 650209</a></div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📷</div>
+      <div class="contact-detail">
+        <div class="contact-label">Instagram</div>
+        <div class="contact-value"><a href="https://instagram.com/sechu_minipasteleria" target="_blank">@sechu_minipasteleria</a></div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📍</div>
+      <div class="contact-detail">
+        <div class="contact-label">Zona de entrega</div>
+        <div class="contact-value">Alumine</div>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">🕐</div>
+      <div class="contact-detail">
+        <div class="contact-label">Horario de consultas</div>
+        <div class="contact-value">Lun a Sáb · 9 a 20 hs</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form reveal">
+    <div id="formContent">
+      <h3 class="form-title">Hacer un pedido</h3>
+      <p class="form-subtitle">Completá el formulario y te respondemos a la brevedad ✨</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" placeholder="Tu nombre" id="fname">
+        </div>
+        <div class="form-group">
+          <label>Teléfono / WhatsApp</label>
+          <input type="tel" placeholder="+54 9 11..." id="fphone">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Tipo de pedido</label>
+        <select id="ftype">
+          <option value="">Seleccioná una opción</option>
+          <option>Torta personalizada</option>
+          <option>Minipastelería</option>
+          <option>Mesa dulce</option>
+          <option>Donitas</option>
+          <option>Otro / Consulta</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Fecha del evento</label>
+          <input type="date" id="fdate">
+        </div>
+        <div class="form-group">
+          <label>Cantidad de personas</label>
+          <input type="number" placeholder="Ej: 30" id="fguests">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Detalles del pedido</label>
+        <textarea placeholder="Contanos más sobre lo que necesitás: temática, sabores, colores, etc." id="fmessage"></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">Enviar consulta ✦</button>
+    </div>
+    <div class="form-success" id="formSuccess">
+      <div class="tick">🎉</div>
+      <h3>¡Gracias por escribirnos!</h3>
+      <p>Recibimos tu consulta y te vamos a responder a la brevedad por WhatsApp o Instagram.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div class="nav-logo"><em>Sechu</em></div>
+    <p>Pastelería & minipastelería artesanal hecha con amor por Lara, para tus momentos más dulces.</p>
+    <div class="social-links">
+      <a href="https://instagram.com/sechu" target="_blank" class="social-btn">📷</a>
+      <a href="https://wa.me/5491100000000" target="_blank" class="social-btn">📱</a>
+      <a href="mailto:sechu@email.com" class="social-btn">✉️</a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Servicios</h4>
+    <ul>
+      <li><a href="#servicios">Tortas</a></li>
+      <li><a href="#servicios">Minipastelería</a></li>
+      <li><a href="#servicios">Mesas Dulces</a></li>
+      <li><a href="#servicios">Donitas</a></li>
+      <li><a href="#servicios">Ver todo</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Navegación</h4>
+    <ul>
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Sechu — Todos los derechos reservados.</span>
+    <span>Hecho con ♡ en Buenos Aires</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
